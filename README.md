@@ -57,3 +57,6 @@ const obj = {
 
 const result = convert(obj) // { 'a.b.c': 1 }
 ```
+### Thanks for using this package
+
+#### if you need my help you can write to me at posohin7@gmail.com. You can also open bugs.
