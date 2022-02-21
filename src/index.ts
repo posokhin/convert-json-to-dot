@@ -12,7 +12,7 @@ interface Arguments {
 	to: string;
 }
 
-export const init = (args: Arguments, callback: (from: string, to: string) => void): void => {
+const init = (args: Arguments, callback: (from: string, to: string) => void): void => {
 	if (!args.from) {
 		consola.error('You need to pass from')
 	}
