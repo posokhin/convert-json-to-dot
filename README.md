@@ -1,6 +1,6 @@
 # convert-json-to-dot
 
-## Convert nested JSON object to dot notation
+### Convert nested JSON object to dot notation
 
 ### Installation
 
