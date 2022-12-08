@@ -42,6 +42,28 @@ result.json
 }
 ```
 
+### Using convert function
+
+also you can use convert function to convert your object to object with dot annotation
+
+```javascript
+import { convert } from 'convert-json-to-dot/convert'
+
+const object = {
+  a: {
+    b: {
+      c: 'someValue'
+    }
+  }
+}
+
+const result = {}
+
+convert(object, result)
+
+console.log(result) // { "a.b.c": "someValue" }
+```
+
 ### Thanks for using this package
 
 #### if you need my help you can write to me at posohin7@gmail.com. You can also open bugs.

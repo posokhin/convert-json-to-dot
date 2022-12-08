@@ -1,6 +1,6 @@
 {
   "name": "convert-json-to-dot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert json object to dot notation",
   "main": "index.js",
   "types": "index.d.ts",
@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/posokhin/convert-json-to-dot#readme",
   "scripts": {
-    "build": "rimraf dist && tsc && copyfiles package.json dist",
+    "build": "rimraf dist && tsc && copyfiles package.json README.md dist",
     "test": "jest tests"
   },
   "keywords": [
