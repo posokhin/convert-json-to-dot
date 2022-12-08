@@ -1,9 +1,9 @@
 {
   "name": "convert-json-to-dot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert json object to dot notation",
-  "main": "dist/index.js",
-  "types": "dist/convert.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/posokhin/convert-json-to-dot.git"
@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/posokhin/convert-json-to-dot#readme",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc && copyfiles package.json dist",
     "test": "jest tests"
   },
   "keywords": [
@@ -29,7 +29,7 @@
   "author": "Anton Posokhin <posohin7@gmail.com>",
   "license": "ISC",
   "bin": {
-    "convert-json-to-dot": "dist/index.js"
+    "convert-json-to-dot": "index.js"
   },
   "devDependencies": {
     "@types/consola": "^2.2.5",
@@ -38,19 +38,18 @@
     "@types/node": "^17.0.18",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
+    "consola": "^2.15.3",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.9.0",
     "eslint-plugin-jest": "^26.1.1",
     "jest": "^27.5.1",
+    "minimist": "^1.2.7",
     "nodemon": "^2.0.15",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.3",
     "typescript": "^4.5.5"
   },
-  "dependencies": {
-    "consola": "^2.15.3",
-    "minimist": "^1.2.5"
-  },
   "files": [
-    "dist/**/*"
+    "*"
   ]
 }
