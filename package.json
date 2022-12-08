@@ -1,6 +1,6 @@
 {
   "name": "convert-json-to-dot",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Convert json object to dot notation",
   "main": "index.js",
   "types": "index.d.ts",
